@@ -2,7 +2,7 @@ import psycopg2
 import funPostgreSQL
 
 #----------------------------------------------------------------------------#
-def ingresoNum(prompt):
+def ingresoNum(prompt):#funcion para ingresar la opcion de menu
     while True:
         try:
             opcion = int(input(prompt))
@@ -11,7 +11,7 @@ def ingresoNum(prompt):
             pass
 
 
-def menu(titulo,opciones):
+def menu(titulo,opciones):  #funcion para mostrar el menu
     print("------------------")
     print(titulo)
     n=1
